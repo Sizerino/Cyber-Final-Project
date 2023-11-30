@@ -1,0 +1,10 @@
+Would prefer to be included:
+DISM / Windows ISOs / PowerShell / Registry / Coding in C#
+
+Has to be included:
+Integration with a server (Constant usage / Common usage)
+
+Scrapped ideas:
+- "Windows OS Copy" | Reason: Rare server usage, low effort in code
+
+Possible Ideas:
