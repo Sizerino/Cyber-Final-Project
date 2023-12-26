@@ -1,10 +1,23 @@
-Would prefer to be included:
-DISM / Windows ISOs / PowerShell / Registry / Coding in C#
+The idea:
 
-Has to be included:
-Integration with a server (Constant usage / Common usage)
+Both computers are on LAN (Maybe add support for different
+networks later)
 
-Scrapped ideas:
-- "Windows OS Copy" | Reason: Rare server usage, low effort in code
+Computer 1 (Innocent):
 
-Possible Ideas:
+Working on some server of his (A beginner learning python)
+
+Computer 2 (Attacker):
+
+Searches for a Computer that has a python server open, starts
+an RCE operation to inject code inside the server in order
+to get backdoor access to root of Computer 1, using this
+root access he can take important information and send it
+through local LAN or to a remote server.
+
+Bonus:
+
+Set up an ssh connection which fires up each time with
+the computer's boot - making it possible to connect at a
+different time (For example: after a restart) when its
+connected to the internet.
