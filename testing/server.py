@@ -3,10 +3,10 @@ import socket
 sock = socket.socket()
 
 host = "0.0.0.0"
-port = 10000
-
+port = 0
 sock.bind((host, port))
 sock.listen(2)
+
 print(f"Listening as {host}:{port}...")
 client_socket, client_address = sock.accept()
 
@@ -20,5 +20,6 @@ while True:
         break
     results = client_socket.recv(1024).decode()
     print(results)
+
 client_socket.close()
 sock.close()
