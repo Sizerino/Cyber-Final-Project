@@ -3,14 +3,14 @@ import socket
 sock = socket.socket()
 
 host = "0.0.0.0"
-port = 0
+port = 6969
 sock.bind((host, port))
 sock.listen(2)
 
-print(f"Listening as {host}:{port}...")
+# print(f"Listening as {host}:{port}...")
 client_socket, client_address = sock.accept()
 
-print(f"{client_address[0]}:{client_address[1]} Connected!")
+# print(f"{client_address[0]}:{client_address[1]} Connected!")
 client_socket.send("ambata blow".encode())
 
 while True:
