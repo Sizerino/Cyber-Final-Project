@@ -8,7 +8,7 @@ def main():
         windowsProcess.communicate()
         print("")
     elif platform.system() == "Linux":
-        linuxProcess = subprocess.Popen("linux.bash", stdout = sys.stdout)
+        linuxProcess = subprocess.Popen(["/bin/bash", "./main/linux.bash"], stdout = sys.stdout)
         linuxProcess.communicate()
         print("")
     else:
