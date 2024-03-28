@@ -1,6 +1,9 @@
+import os
 import sys
 import platform
 import subprocess
+
+os.system("./main/vulnerableServer.py")
 
 def main():
     if platform.system() == "Windows":
@@ -12,7 +15,7 @@ def main():
         linuxProcess.communicate()
         print("")
     else:
-        print("Can't Identify OS")
+        print("Can't identify OS")
     
 if __name__ == "__main__":
     main()
