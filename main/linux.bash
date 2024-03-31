@@ -1,2 +1,3 @@
 #!/bin/bash
-echo i love balls
+
+echo Detected as Linux!
