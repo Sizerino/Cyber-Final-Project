@@ -3,19 +3,21 @@ import socket
 sock = socket.socket()
 
 host = "0.0.0.0"
-port = 15151
+port = 19191
 sock.bind((host, port))
 sock.listen(2)
 
-client_socket, client_address = sock.accept()
+client_sock, client_addr = sock.accept()
+
+print("Connection established from:", client_addr)
 
 while True:
-    message = client_socket.recv(1024)
-    client_socket.send(message)
+    message = client_sock.recv(1024)
+    client_sock.send(message)
     print(message)
     
     if message == "exit":
         break
 
-client_socket.close()
+client_sock.close()
 sock.close()
