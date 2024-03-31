@@ -1,18 +1,15 @@
-import os
 import sys
 import platform
 import subprocess
 
-os.system("./main/vulnerableServer.py")
-
 def main():
     if platform.system() == "Windows":
-        windowsProcess = subprocess.Popen('powershell.exe -ExecutionPolicy RemoteSigned -file "windows.ps1"', stdout = sys.stdout)
-        windowsProcess.communicate()
+        Process = subprocess.Popen('powershell.exe -ExecutionPolicy RemoteSigned -file "windows.ps1"', stdout = sys.stdout)
+        Process.communicate()
         print("")
     elif platform.system() == "Linux":
-        linuxProcess = subprocess.Popen(["/bin/bash", "./main/linux.bash"], stdout = sys.stdout)
-        linuxProcess.communicate()
+        Process = subprocess.Popen(["/bin/bash", "./main/linux.bash"], stdout = sys.stdout)
+        Process.communicate()
         print("")
     else:
         print("Can't identify OS")
