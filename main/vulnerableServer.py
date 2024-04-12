@@ -1,11 +1,13 @@
 import socket
 
-sock = socket.socket()
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 host = "0.0.0.0"
 port = 19191
 sock.bind((host, port))
 sock.listen(2)
+
+print("Listening on: {}:{}".format(host, port))
 
 client_sock, client_addr = sock.accept()
 
