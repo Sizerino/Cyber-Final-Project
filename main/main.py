@@ -5,12 +5,18 @@ import subprocess
 
 def main():
     if platform.system() == "Windows":
-        process = subprocess.Popen('./powershell.exe -ExecutionPolicy RemoteSigned -file "windows.ps1"',stdout=sys.stdout)
+        process = subprocess.Popen(
+            './powershell.exe -ExecutionPolicy RemoteSigned -file "windows.ps1"',
+            stdout=sys.stdout
+        )
         process.communicate()
         print("")
 
     elif platform.system() == "Linux":
-        process = subprocess.Popen(["/bin/bash", "./linux.bash"], stdout=sys.stdout)
+        process = subprocess.Popen(
+            ["/bin/bash", "./linux.bash"],
+            stdout=sys.stdout
+        )
         process.communicate()
         print("")
 
