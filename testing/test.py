@@ -2,12 +2,12 @@ import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-host = "192.168.1.130"
-port = 19191
+host = "127.0.0.1"
+port = 9999
 
 sock.connect((host, port))
 
-buffer = "A"*2000
-sock.send(buffer)
+testBuffer = b"A"*25000
+sock.send((b'TRUN .' + testBuffer + b'\r\n'))
 
-sock.close()
+# sock.close()
