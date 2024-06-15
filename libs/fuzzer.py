@@ -1,26 +1,23 @@
-import boofuzz
+import socket
+from print_color import print
+import datetime
 
-host = '192.168.80.129'
-port = 9999
 
+def fuzz():
+    buffersize = 0
+    while buffersize <= 65536:
+        buffersize += 10
 
-def main():
-    session = boofuzz.Session(
-        target=boofuzz.Target(
-            connection=boofuzz.SocketConnection(
-                host, port, proto='tcp'
-            )
+        datetimeformat = "".join([
+            "[",
+            datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
+            "]"
+        ])
+
+        print(
+            datetimeformat,
+            "Transmiting {} bytes".format(buffersize),
+            color="blue"
         )
-    )
 
-    boofuzz.s_initialize("TRUN")
-    boofuzz.s_string("TRUN", fuzzable=False)
-    boofuzz.s_delim(" ", fuzzable=False)
-    boofuzz.s_string("FUZZ")
-
-    session.connect(boofuzz.s_get("TRUN"))
-    session.fuzz()
-
-
-if __name__ == "__main__":
-    main()
+# fuzz()
