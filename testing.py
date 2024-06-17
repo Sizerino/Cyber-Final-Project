@@ -1,4 +1,5 @@
 import sys
+import threading
 import customtkinter
 from PIL import Image
 from libs import fuzzer
@@ -42,13 +43,13 @@ class SidebarFrame(customtkinter.CTkFrame):
 
         self.button1 = customtkinter.CTkButton(
             master=self,
-            text="brainrot"
+            text="Control Panel"
         )
         self.button1.grid(padx=5, pady=5, row=1, column=0)
 
         self.button2 = customtkinter.CTkButton(
             master=self,
-            text="more brainrot"
+            text="Console Log"
         )
         self.button2.grid(padx=5, pady=5, row=2, column=0)
 
@@ -63,7 +64,7 @@ class MainFrame(customtkinter.CTkFrame):
         self.button = customtkinter.CTkButton(
             master=self,
             text="W.I.P",
-            command=lambda: fuzzer.fuzz()
+            command=lambda: threadedfunction(fuzzer.fuzz, ("192.168.31.128", 9999))
         )
         self.button.grid(padx=5, pady=5, row=0, column=0)
 
@@ -74,6 +75,9 @@ class MainFrame(customtkinter.CTkFrame):
 
         self.rowconfigure((0, 1), weight=1)
         self.columnconfigure(0, weight=1)
+
+        def threadedfunction(function, arguments):
+            threading.Thread(target=function, args=arguments).start()
 
         def consoleoutput(stdout):
             self.console.insert(customtkinter.INSERT, stdout)
