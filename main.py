@@ -18,10 +18,6 @@ def main():
 
     root.mainloop()
 
-    # clutch pwn commands listed here:
-    # pattern = pwn.cyclic_metasploit()
-    # pwn.metasploit_pattern()
-
 
 if __name__ == "__main__":
     main()
