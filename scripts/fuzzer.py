@@ -28,10 +28,10 @@ def fuzz(host, port):
 
             sock.recv(1024)
             sock.close()
-            buffersize += 200
+            buffersize += 500
 
     except socket.error:
-        if buffersize == 0:
+        if buffersize == 100:
             print("Couldn't connect to socket")
 
         else:
