@@ -75,9 +75,9 @@ class MainFrame(customtkinter.CTkFrame):
         self.label = customtkinter.CTkLabel(
             master=self,
             text=(
-                "STATUS: Waiting For User Action...\n"
-                "Enter The Following Values: [Server IP | Server Port]\n"
-                "After That, Start Stage 1."
+                "STATUS: Waiting For User Action..."  # \n
+                # "Enter The Following Values: [Server IP | Server Port]\n"
+                # "After That, Start Stage 1."
             )
         )
         self.label.grid(padx=5, row=1, column=0, columnspan=2)
@@ -85,12 +85,12 @@ class MainFrame(customtkinter.CTkFrame):
         self.input1 = customtkinter.CTkEntry(
             master=self
         )
-        self.input1.grid(sticky="we", padx=5, pady=5, row=2, column=0)
+        # self.input1.grid(sticky="we", padx=5, pady=5, row=2, column=0)
 
         self.input2 = customtkinter.CTkEntry(
             master=self
         )
-        self.input2.grid(sticky="we", padx=5, pady=5, row=2, column=1)
+        # self.input2.grid(sticky="we", padx=5, pady=5, row=2, column=1)
 
         self.console = customtkinter.CTkTextbox(
             master=self
@@ -200,6 +200,7 @@ class MainFrame(customtkinter.CTkFrame):
                 )
 
                 self.input1.grid(sticky="we", padx=5, pady=5, row=2, column=0)
+                self.input2.grid(sticky="we", padx=5, pady=5, row=2, column=1)
 
         sys.stdout.write = consoleoutput
 
