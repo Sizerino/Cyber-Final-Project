@@ -2,9 +2,6 @@ import pwn
 import socket
 
 
-# clutch pwn command listed here:
-# pattern = pwn.cyclic_metasploit()
-
 def buff(host, port, buffersize):
     try:
         buffer = b"".join([
@@ -18,7 +15,7 @@ def buff(host, port, buffersize):
             socket.AF_INET,
             socket.SOCK_STREAM
         )
-        sock.settimeout(1)
+        sock.settimeout(2)
 
         sock.connect((host, port))
 
