@@ -13,6 +13,7 @@ class App(customtkinter.CTk):
         self.eval("tk::PlaceWindow . center")
         self.geometry("900x450")
         self.title("Stack Buffer Overflow")
+        customtkinter.set_appearance_mode("dark")
         # self.wm_iconbitmap("./assets/")
 
         self.sidebar = SidebarFrame(self)
@@ -142,8 +143,8 @@ class MainFrame(customtkinter.CTkFrame):
                     text="STATUS: Sending Special Payload Execution..."
                 )
 
-                self.input1.delete(0, customtkinter.END)
-                self.input2.delete(0, customtkinter.END)
+                self.input1.grid_forget()
+                self.input2.grid_forget()
 
         def threadedfunction(function, arguments):
             threading.Thread(target=function, args=arguments).start()
