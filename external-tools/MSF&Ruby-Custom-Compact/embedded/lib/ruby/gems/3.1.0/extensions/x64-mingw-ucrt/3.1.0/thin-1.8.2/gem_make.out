@@ -1,0 +1,21 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/thin-1.8.2/ext/thin_parser
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for main() in -lc... no
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/thin-1.8.2/ext/thin_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-4ji60y sitelibdir\=./.gem.20240617-2020-4ji60y clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/thin-1.8.2/ext/thin_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-4ji60y sitelibdir\=./.gem.20240617-2020-4ji60y
+generating thin_parser-x64-mingw-ucrt.def
+compiling parser.c
+compiling thin.c
+linking shared-object thin_parser.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/thin-1.8.2/ext/thin_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-4ji60y sitelibdir\=./.gem.20240617-2020-4ji60y install
+/usr/bin/install -c -m 0755 thin_parser.so ./.gem.20240617-2020-4ji60y
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/thin-1.8.2/ext/thin_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-4ji60y sitelibdir\=./.gem.20240617-2020-4ji60y clean

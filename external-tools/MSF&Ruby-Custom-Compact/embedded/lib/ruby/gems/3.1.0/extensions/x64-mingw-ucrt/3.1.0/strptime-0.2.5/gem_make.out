@@ -1,0 +1,24 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/strptime-0.2.5/ext/strptime
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for rb_timespec_now()... yes
+checking for rb_time_timespec_new()... yes
+checking for rb_time_utc_offset()... yes
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/strptime-0.2.5/ext/strptime
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-ljikti sitelibdir\=./.gem.20240617-2020-ljikti clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/strptime-0.2.5/ext/strptime
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-ljikti sitelibdir\=./.gem.20240617-2020-ljikti
+generating strptime-x64-mingw-ucrt.def
+compiling ruby_time.c
+compiling strftime.c
+compiling strptime.c
+linking shared-object strptime/strptime.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/strptime-0.2.5/ext/strptime
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-ljikti sitelibdir\=./.gem.20240617-2020-ljikti install
+/usr/bin/install -c -m 0755 strptime.so ./.gem.20240617-2020-ljikti/strptime
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/strptime-0.2.5/ext/strptime
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-ljikti sitelibdir\=./.gem.20240617-2020-ljikti clean

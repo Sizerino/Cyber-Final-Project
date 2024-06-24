@@ -1,0 +1,74 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/pcaprub-0.13.2/ext/pcaprub_c
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+
+[*] Running checks for pcaprub_c code...
+platform is x64-mingw-ucrt
+checking for -lws2_32... yes
+checking for -liphlpapi... yes
+checking for windows.h... yes
+checking for winsock2.h... yes
+checking for iphlpapi.h... yes
+checking for ruby/thread.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl()... yes
+checking for pcap_open_live() in -lwpcap... yes
+checking for pcap_setnonblock() in -lwpcap... yes
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/pcaprub-0.13.2/ext/pcaprub_c
+make DESTDIR\= sitearchdir\=./.gem.20240617-2880-8lwf0f sitelibdir\=./.gem.20240617-2880-8lwf0f clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/pcaprub-0.13.2/ext/pcaprub_c
+make DESTDIR\= sitearchdir\=./.gem.20240617-2880-8lwf0f sitelibdir\=./.gem.20240617-2880-8lwf0f
+generating pcaprub_c-x64-mingw-ucrt.def
+compiling pcaprub.c
+In file included from C:/metasploit-framework/embedded/include/ruby-3.1.0/pcap/pcap.h:41,
+                 from C:/metasploit-framework/embedded/include/ruby-3.1.0/pcap.h:45,
+                 from pcaprub.c:11:
+C:/metasploit-framework/embedded/include/ruby-3.1.0/pcap-stdinc.h:64: warning: "snprintf" redefined
+   64 | #define snprintf _snprintf
+      | 
+In file included from C:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/ruby.h:302,
+                 from C:/metasploit-framework/embedded/include/ruby-3.1.0/ruby.h:38,
+                 from pcaprub.c:1:
+C:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/subst.h:13: note: this is the location of the previous definition
+   13 | #define snprintf ruby_snprintf
+      | 
+C:/metasploit-framework/embedded/include/ruby-3.1.0/pcap-stdinc.h:65: warning: "vsnprintf" redefined
+   65 | #define vsnprintf _vsnprintf
+      | 
+C:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/subst.h:14: note: this is the location of the previous definition
+   14 | #define vsnprintf ruby_vsnprintf
+      | 
+pcaprub.c: In function 'rbpcap_each_data':
+pcaprub.c:984:9: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  984 |   fno = (int)pcap_getevent(rbp->pd);
+      |         ^
+pcaprub.c:984:7: warning: assignment to 'HANDLE' {aka 'void *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  984 |   fno = (int)pcap_getevent(rbp->pd);
+      |       ^
+pcaprub.c: In function 'rbpcap_each_packet':
+pcaprub.c:1026:9: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1026 |   fno = (int)pcap_getevent(rbp->pd);
+      |         ^
+pcaprub.c:1026:7: warning: assignment to 'HANDLE' {aka 'void *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ 1026 |   fno = (int)pcap_getevent(rbp->pd);
+      |       ^
+pcaprub.c: In function 'rbpcap_thread_wait_handle':
+pcaprub.c:1266:7: warning: passing argument 1 of 'rb_thread_call_without_gvl' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1266 |       rbpcap_thread_wait_handle_blocking,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       |
+      |       VALUE (*)(void *) {aka long long unsigned int (*)(void *)}
+In file included from pcaprub.c:4:
+C:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/thread.h:130:42: note: expected 'void * (*)(void *)' but argument is of type 'VALUE (*)(void *)' {aka 'long long unsigned int (*)(void *)'}
+  130 | void *rb_thread_call_without_gvl(void *(*func)(void *), void *data1,
+      |                                  ~~~~~~~~^~~~~~~~~~~~~
+linking shared-object pcaprub_c.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/pcaprub-0.13.2/ext/pcaprub_c
+make DESTDIR\= sitearchdir\=./.gem.20240617-2880-8lwf0f sitelibdir\=./.gem.20240617-2880-8lwf0f install
+/usr/bin/install -c -m 0755 pcaprub_c.so ./.gem.20240617-2880-8lwf0f
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/pcaprub-0.13.2/ext/pcaprub_c
+make DESTDIR\= sitearchdir\=./.gem.20240617-2880-8lwf0f sitelibdir\=./.gem.20240617-2880-8lwf0f clean
