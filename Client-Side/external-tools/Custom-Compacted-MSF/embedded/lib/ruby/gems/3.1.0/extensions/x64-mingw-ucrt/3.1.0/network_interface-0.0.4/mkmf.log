@@ -1,0 +1,782 @@
+have_func: checking for getifaddrs()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getifaddrs; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for getnameinfo()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getnameinfo; return !p; }
+/* end */
+
+--------------------
+
+have_header: checking for net/if_dl.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: net/if_dl.h: No such file or directory
+    5 | #include <net/if_dl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <net/if_dl.h>
+/* end */
+
+--------------------
+
+have_header: checking for netash/ash.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netash/ash.h: No such file or directory
+    5 | #include <netash/ash.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netash/ash.h>
+/* end */
+
+--------------------
+
+have_header: checking for netatalk/at.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netatalk/at.h: No such file or directory
+    5 | #include <netatalk/at.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netatalk/at.h>
+/* end */
+
+--------------------
+
+have_header: checking for netax25/ax25.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netax25/ax25.h: No such file or directory
+    5 | #include <netax25/ax25.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netax25/ax25.h>
+/* end */
+
+--------------------
+
+have_header: checking for neteconet/ec.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: neteconet/ec.h: No such file or directory
+    5 | #include <neteconet/ec.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <neteconet/ec.h>
+/* end */
+
+--------------------
+
+have_header: checking for netipx/ipx.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netipx/ipx.h: No such file or directory
+    5 | #include <netipx/ipx.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netipx/ipx.h>
+/* end */
+
+--------------------
+
+have_header: checking for netpacket/packet.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netpacket/packet.h: No such file or directory
+    5 | #include <netpacket/packet.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netpacket/packet.h>
+/* end */
+
+--------------------
+
+have_header: checking for netrose/rose.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: netrose/rose.h: No such file or directory
+    5 | #include <netrose/rose.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <netrose/rose.h>
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct sockaddr.sa_len in sys/types.h,sys/socket.h,net/if.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <net/if.h>
+ 8: 
+ 9: /*top*/
+10: int s = (char *)&((struct sockaddr*)0)->sa_len - (char *)0;
+11: int main(int argc, char **argv)
+12: {
+13:   return !!argv[argc];
+14: }
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_at in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_at conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ax25 in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ax25 conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_dl in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_dl conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_eon in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_eon conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_in in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_in conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_in6 in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_in6 conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_inarp in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_inarp conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ipx in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ipx conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_iso in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_iso conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ns in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ns conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_un in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_un conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_x25 in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_x25 conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_rose in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_rose conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ash in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ash conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ec in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ec conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_ll in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_ll conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_atmpvc in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_atmpvc conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_atmsvc in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_atmsvc conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_dn in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_dn conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_irda in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_irda conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_llc in sys/types.h,sys/socket.h,sys/un.h,net/if.h,netinet/in.h... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:6:10: fatal error: sys/socket.h: No such file or directory
+    6 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <sys/types.h>
+ 6: #include <sys/socket.h>
+ 7: #include <sys/un.h>
+ 8: #include <net/if.h>
+ 9: #include <netinet/in.h>
+10: 
+11: /*top*/
+12: typedef struct sockaddr_llc conftest_type;
+13: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+

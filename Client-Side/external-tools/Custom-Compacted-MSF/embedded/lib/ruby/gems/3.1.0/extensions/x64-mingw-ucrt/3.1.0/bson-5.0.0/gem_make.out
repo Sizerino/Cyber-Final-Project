@@ -1,0 +1,39 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/bson-5.0.0/ext/bson
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/bson-5.0.0/ext/bson
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-j9sp02 sitelibdir\=./.gem.20240617-2020-j9sp02 clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/bson-5.0.0/ext/bson
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-j9sp02 sitelibdir\=./.gem.20240617-2020-j9sp02
+generating bson_native-x64-mingw-ucrt.def
+compiling bytebuf.c
+compiling endian.c
+compiling init.c
+compiling libbson-utf8.c
+compiling read.c
+compiling util.c
+read.c: In function 'rb_bson_byte_buffer_get_hash':
+read.c:420:90: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+  420 |     pvt_raise_decode_error(rb_sprintf("Expected to read %d bytes for the hash but read %ld bytes", length, READ_PTR(b) - start_ptr));
+      |                                                                                        ~~^
+      |                                                                                          |
+      |                                                                                          long int
+      |                                                                                        %lld
+read.c: In function 'rb_bson_byte_buffer_get_array':
+read.c:451:90: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+  451 |     pvt_raise_decode_error(rb_sprintf("Expected to read %d bytes for the hash but read %ld bytes", length, READ_PTR(b) - start_ptr));
+      |                                                                                        ~~^
+      |                                                                                          |
+      |                                                                                          long int
+      |                                                                                        %lld
+compiling write.c
+linking shared-object bson_native.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/bson-5.0.0/ext/bson
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-j9sp02 sitelibdir\=./.gem.20240617-2020-j9sp02 install
+/usr/bin/install -c -m 0755 bson_native.so ./.gem.20240617-2020-j9sp02
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/bson-5.0.0/ext/bson
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-j9sp02 sitelibdir\=./.gem.20240617-2020-j9sp02 clean

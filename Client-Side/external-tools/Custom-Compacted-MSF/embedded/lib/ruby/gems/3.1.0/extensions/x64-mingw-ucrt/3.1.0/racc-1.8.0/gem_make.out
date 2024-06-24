@@ -1,0 +1,19 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/racc-1.8.0/ext/racc/cparse
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/racc-1.8.0/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-fw4jiu sitelibdir\=./.gem.20240617-2020-fw4jiu clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/racc-1.8.0/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-fw4jiu sitelibdir\=./.gem.20240617-2020-fw4jiu
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/racc-1.8.0/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-fw4jiu sitelibdir\=./.gem.20240617-2020-fw4jiu install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240617-2020-fw4jiu/racc
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/racc-1.8.0/ext/racc/cparse
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-fw4jiu sitelibdir\=./.gem.20240617-2020-fw4jiu clean

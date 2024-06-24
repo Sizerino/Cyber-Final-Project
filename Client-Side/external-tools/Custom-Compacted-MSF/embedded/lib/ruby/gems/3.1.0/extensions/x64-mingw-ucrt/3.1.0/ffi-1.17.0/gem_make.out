@@ -1,0 +1,176 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for ffi.h... no
+checking for ffi.h in /usr/local/include,/usr/include/ffi,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi... no
+checking for whether -Wl,--exclude-libs,ALL is accepted as LDFLAGS... yes
+checking for rb_gc_mark_movable()... yes
+checking for whether -pthread is accepted as LDFLAGS... yes
+creating extconf.h
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-wawnwl sitelibdir\=./.gem.20240617-2020-wawnwl clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-wawnwl sitelibdir\=./.gem.20240617-2020-wawnwl
+generating ffi_c-x64-mingw-ucrt.def
+Configuring libffi
+make -j4 -C "/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt"
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make -j4  all-recursive
+make[2]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[2]: warning: -j4 forced in submake: resetting jobserver mode.
+Making all in include
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/include'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/include'
+Making all in testsuite
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/testsuite'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/testsuite'
+Making all in man
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/man'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/man'
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/x86/ffiw64.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/x86/ffiw64.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src  -c -o src/x86/win64.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/x86/win64.S
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/prep_cif.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/prep_cif.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/types.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/types.c
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/x86/ffiw64.c -o src/x86/ffiw64.o
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/x86/win64.S -o src/x86/win64.o
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/prep_cif.c -o src/prep_cif.o
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/types.c -o src/types.o
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/raw_api.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/raw_api.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/java_raw_api.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/closures.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/closures.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi  -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -Wall  -fexceptions -c -o src/tramp.lo /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/tramp.c
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c -o src/java_raw_api.o
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/raw_api.c -o src/raw_api.o
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_java_raw_call':
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:317:3: warning: 'ffi_java_raw_to_ptrarray' is deprecated [-Wdeprecated-declarations]
+  317 |   ffi_java_raw_to_ptrarray (cif, raw, avalue);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:76:1: note: declared here
+   76 | ffi_java_raw_to_ptrarray (ffi_cif *cif, ffi_java_raw *raw, void **args)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_java_translate_args':
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:328:3: warning: 'ffi_java_raw_size' is deprecated [-Wdeprecated-declarations]
+  328 |   ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+      |   ^~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:45:1: note: declared here
+   45 | ffi_java_raw_size (ffi_cif *cif)
+      | ^~~~~~~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated [-Wdeprecated-declarations]
+  331 |   ffi_java_ptrarray_to_raw (cif, avalue, raw);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:157:1: note: declared here
+  157 | ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c: In function 'ffi_prep_java_raw_closure':
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:369:3: warning: 'ffi_prep_java_raw_closure_loc' is deprecated [-Wdeprecated-declarations]
+  369 |   return ffi_prep_java_raw_closure_loc (cl, cif, fun, user_data, cl);
+      |   ^~~~~~
+C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/java_raw_api.c:337:1: note: declared here
+  337 | ffi_prep_java_raw_closure_loc (ffi_java_raw_closure* cl,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/closures.c -o src/closures.o
+libtool: compile:  x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi -I. -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/include -Iinclude -I/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\"extconf.h\" -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64 -Wall -fexceptions -c /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/src/tramp.c -o src/tramp.o
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc  -Wall  -fexceptions  -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/x86/ffiw64.lo src/x86/win64.lo 
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc  -Wall  -fexceptions -no-undefined -version-info `grep -v '^#' /c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi/libtool-version`   '-LC:/metasploit-framework/embedded/lib' '-m64' -Xcompiler '-fno-lto' -no-undefined -bindir "/ucrt64/bin" -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -o libffi.la -rpath /ucrt64/lib/../lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/x86/ffiw64.lo src/x86/win64.lo 
+libtool: link: rm -fr  .libs/libffi_convenience.a(D)
+libtool: link: ar cr .libs/libffi_convenience.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/x86/ffiw64.o src/x86/win64.o
+libtool: link: ranlib .libs/libffi_convenience.a
+libtool: link: ar cr .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/x86/ffiw64.o src/x86/win64.o
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && cp -pR "../libffi_convenience.la" "libffi_convenience.la" )
+libtool: link: ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && cp -pR "../libffi.la" "libffi.la" )
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[2]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[1]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+compiling ClosurePool.c
+compiling DynamicLibrary.c
+compiling Function.c
+compiling FunctionInfo.c
+compiling LastError.c
+compiling LongDouble.c
+compiling MappedType.c
+compiling MemoryPointer.c
+compiling MethodHandle.c
+compiling Platform.c
+compiling Pointer.c
+compiling Struct.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling Thread.c
+compiling Type.c
+compiling Types.c
+compiling Variadic.c
+compiling ffi.c
+linking shared-object ffi_c.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-wawnwl sitelibdir\=./.gem.20240617-2020-wawnwl install
+make -j4 -C "/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt"
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make -j4  all-recursive
+make[2]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[2]: warning: -j4 forced in submake: resetting jobserver mode.
+Making all in include
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/include'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/include'
+Making all in testsuite
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/testsuite'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/testsuite'
+Making all in man
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/man'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt/man'
+make[3]: Entering directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[3]: warning: -j4 forced in submake: resetting jobserver mode.
+make[3]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[2]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+make[1]: Leaving directory '/c/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c/libffi-x64-mingw-ucrt'
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+compiling ClosurePool.c
+compiling DynamicLibrary.c
+compiling Function.c
+compiling FunctionInfo.c
+compiling LastError.c
+compiling LongDouble.c
+compiling MappedType.c
+compiling MemoryPointer.c
+compiling MethodHandle.c
+compiling Platform.c
+compiling Pointer.c
+compiling Struct.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling Thread.c
+compiling Type.c
+compiling Types.c
+compiling Variadic.c
+compiling ffi.c
+linking shared-object ffi_c.so
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20240617-2020-wawnwl
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/ffi-1.17.0/ext/ffi_c
+make -j4 DESTDIR\= sitearchdir\=./.gem.20240617-2020-wawnwl sitelibdir\=./.gem.20240617-2020-wawnwl clean

@@ -1,0 +1,1054 @@
+block in append_cflags: checking for whether -IC:/metasploit-framework/embedded/include is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64 -IC:/metasploit-framework/embedded/include -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -m64 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -m64 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -O3 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -m64 -O3 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -march=x86-64 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -m64 -march=x86-64 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -IC:/metasploit-framework/embedded/include is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -m64 -IC:/metasploit-framework/embedded/include -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -m64 is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -m64 -m64 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -O3 is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -m64 -O3 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -march=x86-64 is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -m64 -march=x86-64 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_ldflags: checking for whether -LC:/metasploit-framework/embedded/lib is accepted as LDFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310 -LC:/metasploit-framework/embedded/lib -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_ldflags: checking for whether -m64 is accepted as LDFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib  -m64   -lx64-ucrt-ruby310 -m64 -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_ldflags: checking for whether -fno-lto is accepted as LDFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64  -m64   -lx64-ucrt-ruby310 -fno-lto -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -m64 -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -m64 -Wno-declaration-after-statement -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -O2 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -m64 -O2 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -g is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -m64 -g -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Winline is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -m64 -Winline -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wmissing-noreturn is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -m64 -Wmissing-noreturn -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wconversion -Wno-sign-conversion is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -m64 -Wconversion -Wno-sign-conversion -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether  "-Idummypath" is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64  "-Idummypath" -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_library: checking for gzdopen() in -lz... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64   -lx64-ucrt-ruby310 -lz  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <zlib.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))gzdopen; return !p; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_library: checking for iconv_open() in -liconv... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  -lz  -lx64-ucrt-ruby310 -liconv -lz  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <iconv.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return !p; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_PACKAGED_LIBRARIES is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -DNOKOGIRI_PACKAGED_LIBRARIES -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_library: checking for -llzma... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  -liconv -lz  -lx64-ucrt-ruby310 -llzma -liconv -lz  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -llzma: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -lliblzma... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  -liconv -lz  -lx64-ucrt-ruby310 -lliblzma -liconv -lz  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lliblzma: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlParseDoc() in libxml/parser.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <libxml/parser.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xsltParseStylesheetDoc() in libxslt/xslt.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:18:57: error: 'xsltParseStylesheetDoc' undeclared (first use in this function)
+   18 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~
+conftest.c:18:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <libxslt/xslt.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <libxslt/xslt.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: extern void xsltParseStylesheetDoc();
+19: int t(void) { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for exsltFuncRegister() in libexslt/exslt.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <libexslt/exslt.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return !p; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_func: checking for gumbo_parse_with_options() in nokogiri_gumbo.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <nokogiri_gumbo.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))gumbo_parse_with_options; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlHasFeature' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+      |                                                         ^~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlHasFeature();
+18: int t(void) { xmlHasFeature(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlFirstElementChild' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlFirstElementChild();
+18: int t(void) { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlRelaxNGSetParserStructuredErrors' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlRelaxNGSetParserStructuredErrors();
+18: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlRelaxNGSetValidStructuredErrors' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlRelaxNGSetValidStructuredErrors();
+18: int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlSchemaSetValidStructuredErrors' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlSchemaSetValidStructuredErrors();
+18: int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'xmlSchemaSetParserStructuredErrors' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void xmlSchemaSetParserStructuredErrors();
+18: int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_category_warning()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib -LC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed -LC:/metasploit-framework/embedded/lib -m64 -fno-lto  -m64  C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lx64-ucrt-ruby310 C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libexslt.a -lm -lws2_32 -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/lib/libxslt.a -lws2_32 -lm -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/lib/libxml2.a -liconv -lz C:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warning; return !p; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"zlib:1.3.1,libiconv:1.17,libgumbo:1.0.0-nokogiri\"" is accepted as CPPFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxslt\1.1.39\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libxml2\2.12.7\bin;C:\metasploit-framework\embedded\lib\ruby\gems\3.1.0\gems\nokogiri-1.16.5\ports\x64-mingw-ucrt\libiconv\1.17\bin;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -DLIBXSLT_STATIC -DLIBEXSLT_STATIC -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxslt/1.1.39/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libxml2/2.12.7/include/libxml2 -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DLIBXML_STATIC -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64  "-Idummypath" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/zlib/1.3.1/include -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ports/x64-mingw-ucrt/libiconv/1.17/include -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -IC:/metasploit-framework/embedded/lib/ruby/gems/3.1.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x64-mingw-ucrt/libgumbo/1.0.0-nokogiri/include -O3 -fno-fast-math -fstack-protector-strong -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wconversion -Wno-sign-conversion -m64 -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"zlib:1.3.1,libiconv:1.17,libgumbo:1.0.0-nokogiri\"" -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+

@@ -1,0 +1,342 @@
+have_library: checking for -lws2_32... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310 -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -liphlpapi... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64  -lws2_32  -lx64-ucrt-ruby310 -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for windows.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <windows.h>
+/* end */
+
+--------------------
+
+have_header: checking for winsock2.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <winsock2.h>
+/* end */
+
+--------------------
+
+have_header: checking for iphlpapi.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <iphlpapi.h>
+/* end */
+
+--------------------
+
+have_header: checking for ruby/thread.h... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- no
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'rb_thread_blocking_region' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccJZgr32.o:conftest.c:(.text+0xc2): undefined reference to `rb_thread_blocking_region'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void rb_thread_blocking_region();
+18: int t(void) { rb_thread_blocking_region(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'rb_thread_call_without_gvl' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void rb_thread_call_without_gvl();
+18: int t(void) { rb_thread_call_without_gvl(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for pcap_open_live() in -lwpcap... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -lwpcap -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'pcap_open_live' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))pcap_open_live; return !p; }
+      |                                                         ^~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))pcap_open_live; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -lwpcap -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void pcap_open_live();
+18: int t(void) { pcap_open_live(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for pcap_setnonblock() in -lwpcap... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -lwpcap -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -lwpcap -lwpcap -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'pcap_setnonblock' undeclared (first use in this function); did you mean 'rb_w32_set_nonblock'?
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))pcap_setnonblock; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~
+      |                                                         rb_w32_set_nonblock
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))pcap_setnonblock; return !p; }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.1.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.1.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DWIN32 -IC:/WpdPack/include conftest.c  -L. -LC:/metasploit-framework/embedded/lib -LC:/WpdPack/lib/x64  -m64  -lwpcap -liphlpapi -lws2_32  -lx64-ucrt-ruby310 -lwpcap -lwpcap -liphlpapi -lws2_32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void pcap_setnonblock();
+18: int t(void) { pcap_setnonblock(); return 0; }
+/* end */
+
+--------------------
+
