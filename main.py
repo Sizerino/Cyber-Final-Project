@@ -103,7 +103,7 @@ class MainFrame(customtkinter.CTkFrame):
 
         def action(stage, args):
             if stage == 1:
-                threadedfunction(fuzzer.fuzz, ("192.168.31.128", 9999))
+                threadedfunction(fuzzer.fuzz, ("192.168.31.129", 9999))
                 self.button.configure(state=customtkinter.DISABLED)
 
                 self.label.configure(
@@ -111,7 +111,7 @@ class MainFrame(customtkinter.CTkFrame):
                 )
 
             if stage == 2:
-                threadedfunction(buffer.buff, ("192.168.31.128", 9999, args[0]))
+                threadedfunction(buffer.buff, ("192.168.31.129", 9999, args[0]))
 
                 self.button.configure(
                     state=customtkinter.DISABLED,
@@ -126,7 +126,7 @@ class MainFrame(customtkinter.CTkFrame):
                 threadedfunction(
                     payload.exploit,
                     (
-                        "192.168.31.128",
+                        "192.168.31.129",
                         9999,
                         args[0],
                         args[1],
