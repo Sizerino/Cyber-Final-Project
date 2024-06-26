@@ -43,23 +43,8 @@ class SidebarFrame(customtkinter.CTkFrame):
         )
         self.imagelabel.grid(padx=5, pady=5, row=0, column=0)
 
-        self.button1 = customtkinter.CTkButton(
-            master=self,
-            text="Control Panel"
-        )
-        self.button1.grid(padx=5, pady=5, row=1, column=0)
-
-        self.button2 = customtkinter.CTkButton(
-            master=self,
-            text="Live Terminal",
-            # command=lambda: switch(text)
-        )
-        self.button2.grid(padx=5, pady=5, row=2, column=0)
-
-        self.rowconfigure((0, 1, 2), weight=1)
+        self.rowconfigure(0, weight=1)
         self.columnconfigure(0, weight=1)
-
-        # def switch():
 
 
 class MainFrame(customtkinter.CTkFrame):
@@ -170,11 +155,17 @@ class MainFrame(customtkinter.CTkFrame):
                 )
 
                 self.label.configure(
-                    text="STATUS: Sending Special Payload Execution..."
+                    text=(
+                        "STATUS: Generating Reverse Shell Payload...\n"
+                        "Estimated Time To Finish Generating: 5 - 30 Seconds"
+                    )
                 )
 
                 self.input1.grid_forget()
                 self.input2.grid_forget()
+
+            if stage == 4:
+                threading.Thread(target=payload.terminal).start()
 
         def threadedfunction(function, arguments):
             threading.Thread(target=function, args=arguments).start()
@@ -237,6 +228,21 @@ class MainFrame(customtkinter.CTkFrame):
                 self.input1.delete(0, customtkinter.END)
                 self.input2.grid(sticky="we", padx=5, pady=5, row=1, column=1)
                 self.input2.delete(0, customtkinter.END)
+
+            if "CCCC" in stdout:
+                self.button.configure(
+                    state=customtkinter.NORMAL,
+                    text="Live Terminal",
+                    command=lambda: action(4, [None])
+                )
+
+                self.label.configure(
+                    text=(
+                        "INFO: All Stages Complete!\n"
+                        "Head Over To The Live Terminal To Have Access Into\n"
+                        "The Server That Executed The Payload."
+                    )
+                )
 
         sys.stdout.write = consoleoutput
 
