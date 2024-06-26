@@ -14,7 +14,6 @@ class App(customtkinter.CTk):
         self.geometry("950x550")
         self.title("Stack Buffer Overflow")
         customtkinter.set_appearance_mode("dark")
-        # self.wm_iconbitmap("./assets/")
 
         self.sidebar = SidebarFrame(self)
         self.sidebar.configure(fg_color="grey")
