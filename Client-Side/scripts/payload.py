@@ -1,6 +1,5 @@
-import sys
-
 import pwn
+import sys
 import struct
 import socket
 import subprocess
